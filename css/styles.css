@@ -1,0 +1,416 @@
+
+/*
+My brand colors
+Green - 5f8c3f
+Brown - d5843f
+Grey - 5f5f60
+*/
+
+body {
+  font-size: 16px;
+  color: white;
+  background-color: white;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: white;
+  border-radius: 0;
+  border: 0;
+}
+
+#logo-img {
+  background: url('../images/LetsSTEMLogoD2_300.png') no-repeat;
+  width: 300px;
+  height: 115px;
+  margin: 5px 5px 5px 0px;
+}
+
+.navbar-brand {
+  padding-top: 10px;
+}
+
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+
+#nav-list {
+  margin-top: 5px;
+}
+#nav-list a {
+  color: #5f5f60;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.5em;
+}
+
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -60px;
+}
+/* END HEADER */
+
+/* FOOTER */
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  /*background-color: #222;*/
+  background-color: #5f5f60;
+  border-top: 0;
+}
+.panel-footer div.row {
+  margin-bottom: 35px;
+}
+#hours, #address {
+  line-height: 2;
+}
+#hours > span, #address > span {
+  font-size: 1.3em;
+}
+#address p {
+  color: #557c3e;
+  font-size: .8em;
+  line-height: 1.8;
+}
+#testimonials {
+  font-style: italic;
+}
+#testimonials p:nth-child(2) {
+  margin-top: 25px;
+}
+/* END FOOTER */
+
+
+
+/* HOME PAGE */
+.container .jumbotron {
+  box-shadow: 0 0 20px #5f5f60;
+  border: 2px solid #5f8c3f;
+}
+
+/*#menu-tile, #specials-tile, #map-tile {*/
+#coding-tile, #iot-tile, #robotics-tile, #newtrends-tile{
+  height: 200px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  /*border: 2px solid #5f5f60;*/
+  overflow: hidden;
+}
+
+#coding-tile:hover, #iot-tile:hover, #robotics-tile:hover, #newtrends-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+#coding-tile {
+  background: url('../images/coding_250.jpg') no-repeat;
+  background-position: center;
+}
+#iot-tile {
+  background: url('../images/iot_250.jpg') no-repeat;
+  background-position: center;
+}
+#robotics-tile {
+  background: url('../images/robotics_250.jpg') no-repeat;
+  background-position: top;
+}
+#newtrends-tile {
+  background: url('../images/newtrends_250.jpg') no-repeat;
+  background-position: center;
+}
+
+#coding-tile span, #iot-tile span, #robotics-tile span, #newtrends-tile span {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  background-color: white;
+  color: red;
+  opacity: .8;
+}
+
+#main-heading-tile {
+  font-size: 1.75em;
+  font-weight: bold;
+  color: #5f8c3f;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+#sub-heading-tile {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #d5843f;
+  text-align: center;
+  margin-bottom: 40px;
+}
+#text-tile {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #5f5f60;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#testimony-heading-tile {
+  font-size: 1.75em;
+  font-weight: bold;
+  color: #5f8c3f;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+/* END HOME PAGE */
+
+/* MENU CATEGORIES PAGE */
+.category-tile { 
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 15px;
+}
+.category-tile span {
+  position: static;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+.category-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-categories-title + div {
+  margin-bottom: 50px;
+}
+/* END MENU CATEGORIES PAGE */
+
+/* SINGLE CATEGORY PAGE */
+.menu-item-tile {
+  margin-bottom: 25px;
+}
+.menu-item-tile hr {
+  width: 80%;
+}
+.menu-item-tile .menu-item-price {
+  font-size: 1.1em;
+  text-align: right;
+  margin-top: -15px;
+  margin-right: -15px;
+}
+.menu-item-tile .menu-item-price span {
+  font-size: .6em;
+}
+.menu-item-photo {
+  position: relative;
+  border: 2px solid #3F0C1F; 
+  overflow: hidden;
+  padding: 0;
+  margin-right: -15px;
+  margin-left: auto;
+  margin-bottom: 20px;
+  max-width: 250px;
+}
+.menu-item-photo div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  /*background-color: #557c3e;*/
+  background-color: black;
+  text-align: center;
+}
+.menu-item-description {
+  padding-right: 30px;
+}
+h3.menu-item-title {
+  margin: 0 0 10px;
+}
+.menu-item-details {
+  font-size: .9em;
+  font-style: italic;
+}
+/* END SINGLE CATEGORY PAGE */
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .container .jumbotron {
+    background: url('../images/LetsSTEMJumbotron_1200.jpg') no-repeat;
+    height: 552px;
+    margin-top: -10px;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  #logo-img {
+    /*Medium size logo*/
+    background: url('../images/LetsSTEMLogoD2_250.png') no-repeat;
+    width: 250px;
+    height: 96px;
+    margin: 5px 5px 5px 0px;
+  }
+  /* End Header */
+
+  /* Home Page */
+  .container .jumbotron {
+    background: url('../images/LetsSTEMJumbotron_992.jpg') no-repeat;
+    height: 457px;
+    margin-top: -10px;
+  }
+  /* End Home Page */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Header */
+  #logo-img {
+    /*Medium size logo*/
+    background: url('../images/LetsSTEMLogoD2_250.png') no-repeat;
+    width: 250px;
+    height: 96px;
+    margin: 5px 5px 5px 0px;    
+  }
+  /* End Header */
+
+  /* Home Page */
+  .container .jumbotron {
+    background: url('../images/LetsSTEMJumbotron_768.jpg') no-repeat;
+    height: 354px;
+    margin-top: -5px;
+  }
+  /* End Home Page */
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  #logo-img {
+    /*Small size logo*/
+    background: url('../images/LetsSTEMLogoD2_200.png') no-repeat;
+    width: 200px;
+    height: 77px;
+    margin: 5px 5px 5px 15px; 
+  }
+  /* End Header */
+
+
+  /* Header */
+  .navbar-brand {
+    padding-top: 0px;
+    height: 80px;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1em;
+    margin-bottom: 0px;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+  #call-btn > a {
+    font-size: 1.5em;
+    display: block;
+    margin: 0 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #f6b319;
+    color: #951c49;
+  }
+  /* End Header */
+
+  /* Footer */
+  .panel-footer section {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .panel-footer section:nth-child(3) {
+    margin-bottom: 0; /* margin already exists on the whole row */
+  }
+  .panel-footer section hr {
+    width: 50%;
+  }
+  /* End Footer */
+
+  /* Home Page */
+  .container .jumbotron {
+    margin-top: -5px;
+    padding: 0;
+  }
+  /*#menu-tile, #specials-tile {*/
+  #coding-tile, #iot-tile, #robotics-tile, #newtrends-tile{
+    width: 200px;
+    margin: 0 auto 15px;
+  }
+
+  .menu-item-photo {
+    margin-right: auto;
+  }
+  .menu-item-tile .menu-item-price {
+    text-align: center;
+  }
+  .menu-item-description {
+    text-align: center;;
+  }
+}
+
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  
+  /* Header */
+  #logo-img {
+    /*Small size logo*/
+    background: url('../images/LetsSTEMLogoD2_200.png') no-repeat;
+    width: 200px;
+    height: 77px;
+    margin: 5px 5px 5px 15px;
+
+  }
+  /* End Header */
+  
+  /* Home page */
+  /*#menu-tile, #specials-tile {*/
+  #coding-tile, #iot-tile, #robotics-tile, #newtrends-tile{
+    width: 200px;
+    margin: 0 auto 15px;
+  }
+
+  .col-xxs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
+  }
+}
+
+
+
