@@ -24,10 +24,22 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
 var dc = {};
 
 var homeHtml = "snippets/home-snippet.html";
-var allCategoriesUrl =
-  "https://davids-restaurant.herokuapp.com/categories.json";
+
+// Classes
+// var allCategoriesUrl = "https://davids-restaurant.herokuapp.com/categories.json";
+var allCategoriesUrl = "documents/LestSTEMData.json";
 var categoriesTitleHtml = "snippets/categories-title-snippet.html";
 var categoryHtml = "snippets/category-snippet.html";
+
+// Mentors
+var mentorsTitleHTML = "snippets/mentors-title-snippet.html";
+
+// Blogs
+var blogsTitleHTML = "snippets/blogs-title-snippet.html";
+
+// Questions
+var questionsTitleHTML = "snippets/questions-title-snippet.html";
+
 
 // Convenience function for inserting innerHTML for 'select'
 var insertHtml = function (selector, html) {
@@ -74,8 +86,40 @@ dc.loadMenuCategories = function () {
 };
 
 
-// Builds HTML for the categories page based on the data
-// from the server
+// Load the mentors view
+dc.loadMentors = function () {
+  showLoading("#main-content");
+  $ajaxUtils.sendGetRequest(
+    mentorsTitleHTML,
+    function (mentorsTitleHTML) {
+      insertHtml("#main-content", mentorsTitleHTML);
+    },
+    false);
+};
+
+// Load the blogs view
+dc.loadBlogs = function () {
+  showLoading("#main-content");
+  $ajaxUtils.sendGetRequest(
+    blogsTitleHTML,
+    function (blogsTitleHTML) {
+      insertHtml("#main-content", blogsTitleHTML);
+    },
+    false);
+};
+
+// Load the questions view
+dc.loadQuestions = function () {
+  showLoading("#main-content");
+  $ajaxUtils.sendGetRequest(
+    questionsTitleHTML,
+    function (questionsTitleHTML) {
+      insertHtml("#main-content", questionsTitleHTML);
+    },
+    false);
+};
+
+// Builds HTML for the categories page based on the data from the server
 function buildAndShowCategoriesHTML (categories) {
   // Load title snippet of categories page
   $ajaxUtils.sendGetRequest(
@@ -85,10 +129,7 @@ function buildAndShowCategoriesHTML (categories) {
       $ajaxUtils.sendGetRequest(
         categoryHtml,
         function (categoryHtml) {
-          var categoriesViewHtml =
-            buildCategoriesViewHtml(categories,
-                                    categoriesTitleHtml,
-                                    categoryHtml);
+          var categoriesViewHtml = buildCategoriesViewHtml(categories, categoriesTitleHtml,categoryHtml);
           insertHtml("#main-content", categoriesViewHtml);
         },
         false);
@@ -112,12 +153,10 @@ function buildCategoriesViewHtml(categories,
     var html = categoryHtml;
     var name = "" + categories[i].name;
     var short_name = categories[i].short_name;
-    html =
-      insertProperty(html, "name", name);
-    html =
-      insertProperty(html,
-                     "short_name",
-                     short_name);
+    var date_time = categories[i].date_time;
+    html = insertProperty(html, "name", name);
+    html = insertProperty(html, "short_name", short_name);
+    html = insertProperty(html, "date_time", date_time);
     finalHtml += html;
   }
 

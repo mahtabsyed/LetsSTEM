@@ -63,15 +63,14 @@ body {
 
 /* FOOTER */
 .panel-footer {
-  margin-top: 30px;
-  padding-top: 35px;
-  padding-bottom: 30px;
-  /*background-color: #222;*/
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: #5f5f60;
   border-top: 0;
 }
 .panel-footer div.row {
-  margin-bottom: 35px;
+  margin-bottom: 20px;
 }
 #hours, #address {
   line-height: 2;
@@ -80,8 +79,8 @@ body {
   font-size: 1.3em;
 }
 #address p {
-  color: #557c3e;
-  font-size: .8em;
+  color: #5f8c3f;
+  font-size: 1em;
   line-height: 1.8;
 }
 #testimonials {
@@ -100,13 +99,11 @@ body {
   border: 2px solid #5f8c3f;
 }
 
-/*#menu-tile, #specials-tile, #map-tile {*/
 #coding-tile, #iot-tile, #robotics-tile, #newtrends-tile{
   height: 200px;
   width: 100%;
   margin-bottom: 15px;
   position: relative;
-  /*border: 2px solid #5f5f60;*/
   overflow: hidden;
 }
 
@@ -143,13 +140,44 @@ body {
   opacity: .8;
 }
 
+#learn-tile, #create-tile{
+  height: 200px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  overflow: hidden;
+}
+#learn-tile {
+  background: url('../images/Learn_By_Experiment-250.png') no-repeat;
+  background-position: center;
+}
+#create-tile {
+  background: url('../images/Create_And_Express-250.png') no-repeat;
+  background-position: center;
+}
+#details-tile {
+  font-size: 1em;
+  font-weight:normal;
+  color: #5f5f60;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#details-heading-tile {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #d5843f;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
 #main-heading-tile {
   font-size: 1.75em;
   font-weight: bold;
   color: #5f8c3f;
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
 }
 #sub-heading-tile {
   font-size: 1.5em;
@@ -166,6 +194,22 @@ body {
   margin-bottom: 50px;
 }
 
+#question-tile {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #5f5f60;
+  text-align: center;
+  margin-bottom: 40px;
+}
+#answer-tile {
+  font-size: 1.1em;
+  font-weight: normal;
+  color: #5f5f60;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+
 #testimony-heading-tile {
   font-size: 1.75em;
   font-weight: bold;
@@ -180,22 +224,20 @@ body {
 /* MENU CATEGORIES PAGE */
 .category-tile { 
   position: relative;
-  border: 2px solid #3F0C1F;
-  overflow: hidden;
-  width: 200px;
-  height: 200px;
+  /*border: 2px solid #3F0C1F;*/
+  /*overflow: hidden;*/
+  /*width: 200px;*/
+  height: 25px;
   margin: 0 auto 15px;
 }
-.category-tile span {
+.category-tile div {
   position: static;
   bottom: 0;
   right: 0;
   width: 100%;
   text-align: center;
-  font-size: 1.2em;
-  text-transform: uppercase;
-  background-color: #000;
-  color: #fff;
+  font-size: 1.1em;
+  color: #d5843f;
   opacity: .8;
 }
 .category-tile:hover {
@@ -203,9 +245,31 @@ body {
 }
 
 #menu-categories-title + div {
+  font-size: 1.75em;
+  font-weight: bold;
+  color: #5f8c3f;
+  text-align: center;
+  margin-top: 20px;
   margin-bottom: 50px;
 }
 /* END MENU CATEGORIES PAGE */
+
+
+/* MENTOR PAGE */
+#mahtab-tile, #shabana-tile{
+  height: 200px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  overflow: hidden;
+}
+#mahtab-tile {
+  background: url('../images/mahtab-200.jpg') no-repeat;
+  background-position: center;
+}
+/* END MENTOR PAGE */
+
+
 
 /* SINGLE CATEGORY PAGE */
 .menu-item-tile {
