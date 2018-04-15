@@ -1,25 +1,25 @@
 [
 	{	"id":1,
-		"short_name":"coding",
-		"name":"Scratch - Beginner",
+		"short_name":"Coding",
+		"name":"Foundation Class",
 		"date_time":"Sat 19 May, 11:00 am-12:30pm",
 		"class-size":"5"},
 
 	{	"id":2,
-		"short_name":"coding",
-		"name":"Scratch - Beginner",
+		"short_name":"Coding",
+		"name":"Foundation Class",
 		"date_time":"Sun 20 May, 11:00 am-12:30pm",
 		"class-size":"5"},
 
 	{	"id":3,
-		"short_name":"coding",
-		"name":"HTML - Beginner",
+		"short_name":"Coding",
+		"name":"Beginner Class",
 		"date_time":"Sat 26 May, 11:00 am-12:30pm",
 		"class-size":"5"},
 
 	{	"id":4,
-		"short_name":"coding",
-		"name":"HTML - Beginner",
+		"short_name":"Coding",
+		"name":"Beginner Class",
 		"date_time":"Sun 27 May, 11:00 am-12:30pm",
 		"class-size":"5"}
 
