@@ -13,13 +13,13 @@
 
 	{	"id":3,
 		"short_name":"Coding",
-		"name":"Beginner Class",
+		"name":"Beginners Class",
 		"date_time":"Sat 26 May, 11:00 am-12:30pm",
 		"class-size":"5"},
 
 	{	"id":4,
 		"short_name":"Coding",
-		"name":"Beginner Class",
+		"name":"Beginners Class",
 		"date_time":"Sun 27 May, 11:00 am-12:30pm",
 		"class-size":"5"}
 
