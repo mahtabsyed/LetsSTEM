@@ -228,7 +228,7 @@ body {
   /*overflow: hidden;*/
   /*width: 200px;*/
   height: 25px;
-  margin: 0 auto 15px;
+  margin: 0 auto 25px;  
 }
 .category-tile div {
   position: static;
