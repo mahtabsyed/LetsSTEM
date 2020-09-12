@@ -2,25 +2,25 @@
 	{	"id":1,
 		"short_name":"Coding",
 		"name":"Foundation Class",
-		"date_time":"Sat 07 Jul, 11:00 am-12:30pm",
+		"date_time":"Sat 12 Dec 2020, 11:00 am-12:30pm",
 		"class-size":"5"},
 
 	{	"id":2,
 		"short_name":"Coding",
 		"name":"Foundation Class",
-		"date_time":"Sun 08 Jul, 11:00 am-12:30pm",
+		"date_time":"Sun 13 Dec 2020, 11:00 am-12:30pm",
 		"class-size":"5"},
 
 	{	"id":3,
 		"short_name":"Coding",
 		"name":"Beginners Class",
-		"date_time":"Sat 14 Jul, 11:00 am-12:30pm",
+		"date_time":"Sat 19 Dec 2020, 11:00 am-12:30pm",
 		"class-size":"5"},
 
 	{	"id":4,
 		"short_name":"Coding",
 		"name":"Beginners Class",
-		"date_time":"Sun 15 Jul, 11:00 am-12:30pm",
+		"date_time":"Sun 20 Dec 2020, 11:00 am-12:30pm",
 		"class-size":"5"}
 
 ]
